@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static "css/style.css" %}" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>𝑅𝑒𝓈𝓉𝒶𝓊𝓇𝒶𝓃𝓉 𝒜𝓋𝒶𝓁𝑒𝓇</title>
+</head>
+<body>
+<div class="all">
+    <h1 class="name">𝑅𝑒𝓈𝓉𝒶𝓊𝓇𝒶𝓃𝓉 𝒜𝓋𝒶𝓁𝑒𝓇</h1>
+    <div class="form">
+        <h1>𝓡𝓮𝓼𝓮𝓻𝓿𝓪𝓽𝓲𝓸𝓷</h1>
+        <form method="POST">
+        {% csrf_token %}
+        <table>
+            {{ form }}
+        </table>
+            <br>
+        <input class="button" type="submit" value="𝓢𝓮𝓷𝓭">
+        </form>
+    </div>
+</div>
+</body>
+</html>
